@@ -20,16 +20,16 @@ var compare = function(player1, theHouse){
   }else if(player1== "Rock"){
 
         if (theHouse== "Scissors"){
-          return "Rock Wins";
+          return "You Win";
         }else{
-          return "Paper Wins";
+          return "You Lose";
         }
 
   }else if (player1== "Paper"){
         if (theHouse== "Rock"){
-          return "Paper Wins";
+          return "You Win";
         }else{
-          return "Scissors Win";
+          return "You Lose";
         }
   }
 }
