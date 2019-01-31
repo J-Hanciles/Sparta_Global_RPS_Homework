@@ -1,35 +1,34 @@
 
 
-var player1 = prompt("Rock, Paper, or Scissors?")
+var player1 = prompt("Rock, Paper, or Scissors?").toLowerCase();
 var theHouse = Math.random();
 
 
 if(theHouse <= .33) {
-  theHouse = "Rock";
+  theHouse = "rock";
 }else if(theHouse > .34 && theHouse < .67) {
-  theHouse = "Paper";
+  theHouse = "paper";
 } else {
-  theHouse = "Scissors";
-} console.log("The House: " + theHouse);
-
-
+  theHouse = "scissors";
+}
+alert("The House: " + theHouse);
 var compare = function(player1, theHouse){
 
   if(player1==theHouse) {
-    return "it is a tie"
-  }else if(player1== "Rock"){
+    alert("it is a tie");
+  }else if(player1== "rock"){
 
-        if (theHouse== "Scissors"){
-          return "You Win";
+        if (theHouse== "scissors"){
+          alert("You Win");
         }else{
-          return "You Lose";
+          alert("You Lose");
         }
 
-  }else if (player1== "Paper"){
-        if (theHouse== "Rock"){
-          return "You Win";
+  }else if (player1== "paper"){
+        if (theHouse== "rock"){
+          alert("You Win");
         }else{
-          return "You Lose";
+          alert("You Lose");
         }
   }
 }
